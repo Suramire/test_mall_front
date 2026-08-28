@@ -1,0 +1,22 @@
+{
+  "name": "mall-saas-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "商城SaaS系统前端 monorepo（管理后台 + 小程序）",
+  "scripts": {
+    "dev:platform": "pnpm --filter admin-platform dev",
+    "dev:merchant": "pnpm --filter admin-merchant dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "pnpm": {
+    "shamefullyHoist": true,
+    "strictPeerDependencies": false
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

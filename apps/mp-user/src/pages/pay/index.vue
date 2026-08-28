@@ -1,0 +1,3 @@
+<template><view class="wrap"><view class="card"><view class="title">订单支付</view><view class="amount">¥{{ amount.toFixed(2) }}</view><view class="desc">演示环境不会产生真实扣款</view><button class="btn" @tap="pay">确认支付</button></view></view></template>
+<script setup lang="ts">import {ref} from 'vue'; import {toast} from '@mall/uni-shared'; const amount=ref(29.9); function pay(){toast('支付成功（演示）','success'); setTimeout(()=>uni.navigateTo({url:'/pages/order/list'}),500)}</script>
+<style scoped>.wrap{padding:40rpx}.card{background:#fff;border-radius:18rpx;padding:48rpx;text-align:center}.title{font-size:32rpx}.amount{font-size:64rpx;font-weight:700;color:#f5222d;margin:36rpx}.desc{color:#888;font-size:24rpx;margin-bottom:36rpx}.btn{background:#1677ff;color:#fff}</style>

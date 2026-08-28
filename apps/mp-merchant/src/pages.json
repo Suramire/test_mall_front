@@ -1,0 +1,31 @@
+{
+  "pages": [
+    { "path": "pages/home/index", "style": { "navigationBarTitleText": "商家工作台" } },
+    {
+      "path": "pages/login/index",
+      "style": { "navigationBarTitleText": "商家登录" }
+    },
+    {
+      "path": "pages/verify/index",
+      "style": { "navigationBarTitleText": "扫码核销" }
+    },
+    {
+      "path": "pages/records/index",
+      "style": { "navigationBarTitleText": "核销记录" }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "商家小程序",
+    "navigationBarBackgroundColor": "#f6f8fc",
+    "backgroundColor": "#f6f8fc"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#168f86",
+    "list": [
+      { "pagePath": "pages/verify/index", "text": "核销" },
+      { "pagePath": "pages/records/index", "text": "记录" }
+    ]
+  }
+}
