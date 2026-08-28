@@ -14,13 +14,7 @@
   },
   "pnpm": {
     "shamefullyHoist": true,
-    "strictPeerDependencies": false,
-    "onlyBuiltDependencies": [
-      "core-js",
-      "core-js-pure",
-      "esbuild",
-      "vue-demi"
-    ]
+    "strictPeerDependencies": false
   },
   "devDependencies": {
     "typescript": "^5.5.0"
