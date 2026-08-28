@@ -2,7 +2,14 @@ packages:
   - 'packages/*'
   - 'apps/*'
 
-# pnpm 10+：批准依赖执行 postinstall 构建脚本（esbuild 等必须）
+# pnpm 11+：allowBuilds（布尔映射，新格式）
+allowBuilds:
+  core-js: true
+  core-js-pure: true
+  esbuild: true
+  vue-demi: true
+
+# pnpm 10：onlyBuiltDependencies（旧格式，pnpm 11 静默忽略，双写兼容）
 onlyBuiltDependencies:
   - core-js
   - core-js-pure
